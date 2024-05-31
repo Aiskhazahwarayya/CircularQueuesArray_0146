@@ -1,4 +1,5 @@
 #include <iostream>
+#include "C:/Users/Hp/AppData/Local/Temp/TFSTemp/vctmp2980_15781.CircularQueuesArray.f10d9665.cpp"
 using namespace std;
 
 class Queues {
@@ -37,6 +38,15 @@ public:
         queue_array[REAR] = num;
     }
 };
+
+void remove() {
+    if (FRONT == -1) {
+        cout << "Queue underflow\n";
+        return;
+    }
+    cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
+
+} 
 
 
 
