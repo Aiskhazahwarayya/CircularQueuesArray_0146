@@ -22,6 +22,14 @@ public:
             cout << "\nQueue overflow\n";
             return;
         }
+
+        if (FRONT == -1) {
+            FRONT = 0;
+            REAR = 0;
+        }
+
+
+
     }
 };
 
