@@ -28,9 +28,22 @@ public:
             REAR = 0;
         }
 
-
-
+        else {
+            if (REAR == max - 1)
+                REAR = 0;
+            else
+                REAR = REAR + 1;
+        }
+        queue_array[REAR] = num;
     }
 };
+
+
+
+
+
+
+
+
 
 
