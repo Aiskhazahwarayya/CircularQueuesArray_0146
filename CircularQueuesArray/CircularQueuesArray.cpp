@@ -1,5 +1,4 @@
 #include <iostream>
-#include "C:/Users/Hp/AppData/Local/Temp/TFSTemp/vctmp2980_15781.CircularQueuesArray.f10d9665.cpp"
 using namespace std;
 
 class Queues {
@@ -46,6 +45,10 @@ void remove() {
     }
     cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
 
+    if (FRONT == REAR) {
+        FRONT = -1;
+        REAR = -1;
+    }
 } 
 
 
